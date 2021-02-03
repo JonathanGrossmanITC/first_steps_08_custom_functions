@@ -16,42 +16,50 @@ The topics below outline what you learn in the live session. After the live sess
 
 ## [How to Write a Function](#how-to-write-a-function)       
 
-- Two keys concepts for understanding functions:
+- Two keys concepts for understanding functions:  
   -- You have to define your function  
-  -- Once defined, to use your function, you have to invoke it  
+  -- Once defined, to use your function, you have to invoke it    
   
 ### Function Definitions  
 
 - Function definitions are blocks of code that contain instructions for what the function does when you invoke it; note that the function definition code isn't run unless and until you invoke it    
+- You have to define a function before you can use it  
 -- Once you define a function, you can reuse it  
 - You can define functions in the global scope, inside other functional blocks of code, and inside objects; where you define your function impacts which other blocks of code in which you can invoke that function   
 - The modern syntax for writing functions is the [arrow syntax](https://www.w3schools.com/js/js_arrow_function.asp)  
-- You should know about the [older syntax](https://www.w3schools.com/js/js_function_definition.asp) too becuase you will see it online; although you will see it online, practice using the arrow syntax in your code, as its the more modern approach; this [StackOverflow post has some tips](https://stackoverflow.com/a/23045200) on when to use which type of syntax and why   
-- Regardless of which syntax you use, functions can be saved as a named variable, define parameters required by the function, and/or have an explicit `return` statement; each of these are optional and can be used alone or in combination with one another    
-  -- Function definitions that are not saved as a named variable are known as anonymous functions    
-  -- You should get in the habit of saving your function definitions as named variables because this makes your functions re-usable throughout your code  
-  -- Here is an example of an arrow function named `greetUser` saved to variable that console logs a welcome message with the `username`:  
+- You should know about the [older syntax](https://www.w3schools.com/js/js_function_definition.asp) too becuase you will see it online; although you will see it online, practice using the arrow syntax in your code (except inside of the global scope or inside objects), as its the more modern approach; this [StackOverflow post has some tips](https://stackoverflow.com/a/23045200) on when to use which type of syntax and why   
+- The differences between arrow syntax and older syntax are more than just the syntax; the have slightly different behavior, which mostly deals with scope and is beyond what you learn in this lesson  
+- A function defined inside an object is called a method  
+- Regardless of which syntax you use or where your function is defined, functions can be saved as a named variable, define parameters required by the function, and/or have an explicit `return` statement; each of these are optional and can be used alone or in combination with one another    
+- Function definitions that are not saved as a named variable are known as anonymous functions    
+- You should get in the habit of saving your function definitions as named variables because this makes your functions re-usable throughout your code  
+ -- Here is an example of an arrow function named `greetUser` saved to variable that console logs a welcome message with the `username`:  
   ```javascript
   const greetUser = (username) => {
     console.log("Welcome to ITC, " + username);
     }
   ```
-  -- In the example, the `username` is a parameter  
-  -- Your function definitions are not required to include parameters  
-  -- By including parameters in your function definition, that means you need to give those parameters values when you invoke the function  
-  -- You can give them default values in your function definition or you can pass arguments into the function when you invoke it  
-  -- Here is an example definition with a default value for the `username` parameter:  
+- In the example, the `username` is a parameter  
+- Your function definitions are not required to include parameters  
+- By including parameters in your function definition, that means you need to give those parameters values when you invoke the function  
+- You can give them default values in your function definition or you can pass arguments into the function when you invoke it  
+ -- Here is an example definition with a default value for the `username` parameter:  
   ```javascript
   const greetUser = (username="Jack") => {
     console.log("Welcome to ITC, " + username);
     }
    ```
-  -- To invoke a function, you use the name of the function followed by `()`, and you put inside the `()` values for any of the parameters required by the function definition   
+### Invoking a Function    
+
+ - To invoke a function, you use the name of the function followed by `()`, and you put inside the `()` values for any of the parameters required by the function definition   
   -- For instance, `greetUser("Jill")`  
   -- The value "Jill" is an argument for the `username` parameter   
   -- The difference between an argument and parameter is that a **parameter** appears in the **function definition** and is like a property of the function (typically because the function requires that parmeter to have a value for the function to work properly) and an **argument** is a **value** that you pass in for each parameter **when you invoke the function**  
   -- If the function definition has a default value for the parameter, calling the function without an argument results in the function using the default value  
-  -- Invoking a function causes the code inside the function definition to run 
+  -- If a default value exists **and** you pass an argument for the parameter, the argument overrides the default value  
+  -- When you call a function, by default, [arguments are matched to parameters when read from left to right](https://stackoverflow.com/a/8406177)
+  
+  -- Invoking a function causes the code inside the function definition to run  
   -- All functions return a value    
   -- By default, a function returns the value `undefined`; therefore, you you don't explicitly include a `return` statement or if you `return` nothing, then the function's `return` value is `undefined`
   -- You can override that default value by explicitly returning a value, like so:  
@@ -71,9 +79,10 @@ The topics below outline what you learn in the live session. After the live sess
   -- Oftentimes when you return a value, you **will** want to save that value to a variable 
   -- A `return` statement ends that block of code, which means that the browser does not read any code appearing inside of the function definition but after a `return` statement    
   
-  
-  
-
+ ### This is just the tip of the iceberg for function  
+ 
+ - You can do very powerful things with a basic understanding of functions  
+ - Once you feel comfortable with the basics, continue to explore what else you can do with functions  
 
 ## [Examples of Functions](#examples-of-functions)    
 
