@@ -96,6 +96,164 @@ The topics below outline what you learn in the live session. After the live sess
 
 ## [Examples of Functions](#examples-of-functions)    
 
+ - You should be able to explain the parts of the following functions and how they work:  
+ 
+### Basic arrow function definitions 
+ ```javascript
+const sendMessage = () => {
+  const message = "Hello World";
+  console.log(message);
+  return message;
+}
+
+helloMessage = sendMessage()
+
+```
+
+```javascript
+const sendMessageToUser = (username) => {
+  const message = "Hello, " + username;
+  console.log(message);
+  return message;
+}
+
+helloUserMessage = sendMessageToUser("Jack")
+```
+### Basic function definition using old syntax   
+
+ ```javascript
+ const sendMessage = function() {
+  const message = "Hello World";
+  console.log(message);
+  return message;
+}
+
+const helloMessage = sendMessage("Jack")
+```
+
+### Using operators in functions  
+
+```javascript
+const calculateSquare = (number) => {
+  return number * number;
+}
+
+numberSquared = calculateSquare(9)
+```
+
+```javascript
+const raiseToThePowerOf = (number, power) => {
+  return number ** power;
+}
+
+exponentialResult = raiseToThePowerOf(3, 10)
+```
+
+```javascript
+const updateLoaderStatus = (isLoading) => {
+  loader = document.getElementById("loader");
+  
+  if (isLoading === true) {
+      loader.classList.add("show-loader")
+      loader.classList.remove("hide-loader")
+  } else {
+      loader.classList.remove("show-loader")
+      loader.classList.add("hide-loader")
+  }
+}
+
+
+updateLoaderStatus(true)
+```
+
+### Using conditional statements in functions    
+
+```javascript
+const determineOddOrEven = (number) => {
+  if (number % 2 == 0) {
+    return true
+  } else {
+    return false
+  }
+}
+
+isOdd = determineOddOrEven(9)
+isEven = determineOddOrEven(10)
+```
+
+```javascript
+const raiseToThePowerOf = (number, power) => {
+  return number ** power;
+}
+
+exponentialResult = raiseToThePowerOf(3, 10)
+```
+
+### Performing multiple tasks using ES6 Built-in functions
+
+Reverse a string using ES6 (see [this article]https://www.freecodecamp.org/news/how-to-reverse-a-string-in-javascript-in-3-different-ways-75e4763c68cb/ for more information)  
+
+```javascript
+const reverseString = (str) => {
+    // Step 1. Use the split() method to return a new array
+    var splitString = str.split(""); // var splitString = "hello".split("");
+    // ["h", "e", "l", "l", "o"]
+ 
+    // Step 2. Use the reverse() method to reverse the new created array
+    var reverseArray = splitString.reverse(); // var reverseArray = ["h", "e", "l", "l", "o"].reverse();
+    // ["o", "l", "l", "e", "h"]
+ 
+    // Step 3. Use the join() method to join all elements of the array into a string
+    var joinArray = reverseArray.join(""); // var joinArray = ["o", "l", "l", "e", "h"].join("");
+    // "olleh"
+    
+    //Step 4. Return the reversed string
+    return joinArray; // "olleh"
+}
+ 
+reverseString("hello");
+```
+
+### Manipulating the DOM  
+
+Check out this [MDN Example](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/conditionals#else_if); here is the code from that example, but click on the link to see it in action    
+
+```html
+<label for="weather">Select the weather type today: </label>
+<select id="weather">
+  <option value="">--Make a choice--</option>
+  <option value="sunny">Sunny</option>
+  <option value="rainy">Rainy</option>
+  <option value="snowing">Snowing</option>
+  <option value="overcast">Overcast</option>
+</select>
+
+<p></p>
+```
+
+```javascript
+const select = document.querySelector('select');
+const para = document.querySelector('p');
+
+select.addEventListener('change', setWeather);
+
+function setWeather() {
+  const choice = select.value;
+
+  if (choice === 'sunny') {
+    para.textContent = 'It is nice and sunny outside today. Wear shorts! Go to the beach, or the park, and get an ice cream.';
+  } else if (choice === 'rainy') {
+    para.textContent = 'Rain is falling outside; take a rain coat and an umbrella, and don\'t stay out for too long.';
+  } else if (choice === 'snowing') {
+    para.textContent = 'The snow is coming down — it is freezing! Best to stay in with a cup of hot chocolate, or go build a snowman.';
+  } else if (choice === 'overcast') {
+    para.textContent = 'It isn\'t raining, but the sky is grey and gloomy; it could turn any minute, so take a rain coat just in case.';
+  } else {
+    para.textContent = '';
+  }
+}
+```
+
 ## [Live Coding](#live-coding)   
 
 The live coding session continues working on the live code from the previous lessons. Here are the tasks:  
