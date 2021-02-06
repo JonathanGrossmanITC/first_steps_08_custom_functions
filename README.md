@@ -2,7 +2,7 @@
 
 Welcome to the eighth lesson! In this lesson, you learn how to write your own functions. Functions are blocks of code that perform one or more tasks. They're critical for adding functionality to your webpages. You will study the syntax of how to write a function and learn how functions work. Then, you will see several examples of how you can use functions to enhance your projects.
 
-The purpose of showing you examples of how you can use functions is because many different types of situations require you to use a function, and not in all situations are you going to use functions in the same way. For instance, you can use a function do perform a tasks and `return` a value. Or, instead of returning a value, you may want the function to manipulate the DOM, update a database or perform some other tasks without returning a value. 
+The purpose of showing you examples of how you can use functions is because many different types of situations require you to use a function, and not in all situations are you going to use functions in the same way. For instance, you can use a function to perform a task and `return` a value. Or, instead of returning a value, you may want the function to manipulate the DOM, update a database, or perform some other tasks without returning a value. 
 
 Plus, while practicing writing functions, you can weave together what you learned in previous chapters. For instance, you can write functions containing conditional statements, operators, and expressions. In addition, in your functions, you can get elements by the `id`, tag type, and `class` and do other DOM manipulations. 
 
@@ -30,7 +30,7 @@ The topics below outline what you learn in the live session. After the live sess
 - You can define functions in the global scope, inside other functional blocks of code, and inside objects; where you define your function impacts which other blocks of code in which you can invoke that function   
   -- Once you define a function, you can invoke (or call) it multiple times  
 - The modern syntax for writing functions is the [arrow syntax](https://www.w3schools.com/js/js_arrow_function.asp)  
-- You should know about the [older syntax](https://www.w3schools.com/js/js_function_definition.asp) too becuase you will see it online; although you will see it online, practice using the arrow syntax in your code (except inside of the global scope or inside objects), as its the more modern approach; this [StackOverflow post has some tips](https://stackoverflow.com/a/23045200) on when to use which type of syntax and why   
+- You should know about the [older syntax](https://www.w3schools.com/js/js_function_definition.asp) too because you will see it online; although you will see it online, practice using the arrow syntax in your code (except inside of the global scope or inside objects), as its the more modern approach; this [StackOverflow post has some tips](https://stackoverflow.com/a/23045200) on when to use which type of syntax and why   
 - The differences between arrow syntax and older syntax are more than just the syntax; they have slightly different behavior, which mostly deals with scope and is beyond what you learn in this lesson  
 - A function defined inside an object is called a method  
 - Regardless of which syntax you use or where your function is defined, you can 
@@ -83,7 +83,7 @@ The topics below outline what you learn in the live session. After the live sess
  - Oftentimes when you return a value, you **will** want to save that value to a variable to capture that value for later use  
  - To capture the `return` value when you invoke a function, set the function call equal to a variable  
  - For instance, you can do this: `const userGreeting = greetUser("Jill")`  
-  -- Here, `userGreeteing` is equal to the fuction call (`greetUser("Jill")`), and the function call is equal to the value "Welcome to ITC, Jill" because that is the value the function returns (i.e., the value that the function makes available when it's done running the code in the function definition)    
+  -- Here, `userGreeteing` is equal to the function call (`greetUser("Jill")`), and the function call is equal to the value "Welcome to ITC, Jill" because that is the value the function returns (i.e., the value that the function makes available when it's done running the code in the function definition)    
  - Naming is important! Use good naming so that your code **tells a story to your reader** and therefore makes your code easier to understand; 
   -- For instance, notice the function returns a greeting message to a user; a message is a noun, so you should name the message using a descriptive noun, like `userGreeting`. 
   -- For another example, the function definition performs an action, which is to greet the user; so the function definition should have a descriptive verb as the name, like `greetUser`  
