@@ -257,4 +257,6 @@ const setWeather = () => {
 
 The live coding session continues working on the live code from the previous lessons. Here are the tasks:  
 
-1. 
+1. Write a function that gets the title from your webpage and counts the number of vowels and the number of consonants in your title; use a regular `for` loop, not a built-in JavaScript loop; show the numbers for vowels and consonants on the webpage  
+
+2. Write a function that takes in an array containing at least three strings, one of which is not the word "or", and uses the strings in the array to build a sentence that starts with "When I'm really hungry, I like to eat " and is followed by the items in your array where the second-to-last and last item in the sentence are separated by the word "or"; the function should return the sentence (e.g., "When I'm really hungry, I like to eat pasta, pizza, or chocolate ice cream."  
