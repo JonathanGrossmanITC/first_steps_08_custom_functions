@@ -106,8 +106,7 @@ const sendMessage = () => {
   return message;
 }
 
-helloMessage = sendMessage()
-
+const helloMessage = sendMessage()
 ```
 
 ```javascript
@@ -117,11 +116,11 @@ const sendMessageToUser = (username) => {
   return message;
 }
 
-helloUserMessage = sendMessageToUser("Jack")
+const helloUserMessage = sendMessageToUser("Jack")
 ```
 ### Basic function definition using old syntax   
 
- ```javascript
+```javascript
  const sendMessage = function() {
   const message = "Hello World";
   console.log(message);
@@ -138,7 +137,7 @@ const calculateSquare = (number) => {
   return number * number;
 }
 
-numberSquared = calculateSquare(9)
+const numberSquared = calculateSquare(9)
 ```
 
 ```javascript
@@ -146,7 +145,7 @@ const raiseToThePowerOf = (number, power) => {
   return number ** power;
 }
 
-exponentialResult = raiseToThePowerOf(3, 10)
+const exponentialResult = raiseToThePowerOf(3, 10)
 ```
 
 ```javascript
@@ -177,8 +176,8 @@ const determineOddOrEven = (number) => {
   }
 }
 
-isOdd = determineOddOrEven(9)
-isEven = determineOddOrEven(10)
+const isOdd = determineOddOrEven(9)
+const isEven = determineOddOrEven(10)
 ```
 
 ```javascript
@@ -186,25 +185,25 @@ const raiseToThePowerOf = (number, power) => {
   return number ** power;
 }
 
-exponentialResult = raiseToThePowerOf(3, 10)
+const exponentialResult = raiseToThePowerOf(3, 10)
 ```
 
 ### Performing multiple tasks using ES6 Built-in functions
 
-Reverse a string using ES6 (see [this article]https://www.freecodecamp.org/news/how-to-reverse-a-string-in-javascript-in-3-different-ways-75e4763c68cb/ for more information)  
+Reverse a string using ES6 (see [this article](https://www.freecodecamp.org/news/how-to-reverse-a-string-in-javascript-in-3-different-ways-75e4763c68cb/) for more information)  
 
 ```javascript
 const reverseString = (str) => {
     // Step 1. Use the split() method to return a new array
-    var splitString = str.split(""); // var splitString = "hello".split("");
+    const splitString = str.split(""); // var splitString = "hello".split("");
     // ["h", "e", "l", "l", "o"]
  
     // Step 2. Use the reverse() method to reverse the new created array
-    var reverseArray = splitString.reverse(); // var reverseArray = ["h", "e", "l", "l", "o"].reverse();
+    const reverseArray = splitString.reverse(); // var reverseArray = ["h", "e", "l", "l", "o"].reverse();
     // ["o", "l", "l", "e", "h"]
  
     // Step 3. Use the join() method to join all elements of the array into a string
-    var joinArray = reverseArray.join(""); // var joinArray = ["o", "l", "l", "e", "h"].join("");
+    const joinArray = reverseArray.join(""); // var joinArray = ["o", "l", "l", "e", "h"].join("");
     // "olleh"
     
     //Step 4. Return the reversed string
@@ -237,7 +236,7 @@ const para = document.querySelector('p');
 
 select.addEventListener('change', setWeather);
 
-function setWeather() {
+const setWeather = () => {
   const choice = select.value;
 
   if (choice === 'sunny') {
