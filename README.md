@@ -38,20 +38,20 @@ The topics below outline what you learn in the live session. After the live sess
   2. Define parameters (like inputs) required by the function in order to invoke it,  
   3. Give the function an explicit `return` statement; 
 - Each of these are optional and can be used alone or in combination with one another  
-- You can read about saving a function as a named variable here and can read about parameters and the `return` statement in the sub section below this one  
- -- Function definitions that are not saved as a named variable are known as anonymous functions    
- -- You should get in the habit of saving your function definitions as named variables because this makes your functions re-usable throughout your code  
- -- Here is an example of an arrow function named `greetUser` saved to variable that console logs a welcome message with a `username`:  
+- You can read about saving a function as a named variable here in this section and can read about parameters and the `return` statement in the sub section below this one  
+- Function definitions that are not saved as a named variable are known as anonymous functions    
+- You should get in the habit of saving your function definitions as named variables because this makes your functions re-usable throughout your code  
+- Here is an example of an arrow function named `greetUser` saved to variable that console logs a welcome message with a `username`:  
   ```javascript
   const greetUser = (username) => {
     console.log("Welcome to ITC, " + username);
     }
   ```
- -- In the example, the `username` is a parameter required by the function definition    
- -- Your function definitions are not required to include parameters; however, if you do include one or more parameters, they go inside the parenthesis in the function definition    
- -- By including parameters in your function definition, that means you need to give those parameters values when you invoke the function  
- -- You can [give parameters default values](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters) in your function definition or you can pass arguments into the function when you invoke it (or both, in which case your argument trumps the default value)  
- -- Here is an example definition with a default value for the `username` parameter:  
+- In the example, the `username` is a parameter required by the function definition    
+- Your function definitions are not required to include parameters; however, if you do include one or more parameters, they go inside the parenthesis in the function definition    
+- By including parameters in your function definition, that means you need to give those parameters values when you invoke the function  
+- You can [give parameters default values](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters) in your function definition or you can pass arguments into the function when you invoke it (or both, in which case your argument trumps the default value)  
+- Here is an example definition with a default value for the `username` parameter:  
   ```javascript
   const greetUser = (username="Jack") => {
     console.log("Welcome to ITC, " + username);
