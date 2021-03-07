@@ -85,7 +85,7 @@ The topics below outline what you learn in the live session. After the live sess
  - For instance, you can do this: `const userGreeting = greetUser("Jill")`  
   -- Here, `userGreeteing` is equal to the function call (`greetUser("Jill")`), and the function call is equal to the value "Welcome to ITC, Jill" because that is the value the function returns (i.e., the value that the function makes available when it's done running the code in the function definition)    
  - Naming is important! Use good naming so that your code **tells a story to your reader** and therefore makes your code easier to understand;  
-  -- For instance, notice the function returns a greeting message to a user; a message is a noun, so you should name the message using a descriptive noun, like `userGreeting`.  
+  -- For instance, notice the function returns a greeting message to a user; a message is a noun, so you should name the message using a descriptive noun, like `userGreeting`   
   -- For another example, the function definition performs an action, which is to greet the user; so the function definition should have a descriptive verb as the name, like `greetUser`  
  - A `return` statement ends that block of code, which means that the browser does not read any code appearing inside of the function definition but after a `return` statement    
   
